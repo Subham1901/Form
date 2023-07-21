@@ -1,0 +1,14 @@
+.counter-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-groups button:not(:last-child) {
+  margin-right: 10px;
+}
+button {
+  padding: 3px;
+  font-weight: 600;
+  width: 70px;
+}

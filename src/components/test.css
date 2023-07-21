@@ -1,0 +1,28 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 260px;
+  border: 1px solid red;
+  position: relative;
+  border-radius: 5px;
+  padding: 4px;
+}
+.image {
+  border-radius: 5px;
+}
+.image-content {
+  bottom: 0;
+  transform: translateY(-1000%);
+  padding: 4px;
+  background-color: rgba(240, 248, 255, 0.716);
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+.image-container:hover .image-content {
+  transform: translateY(0%);
+  background-color: rgba(240, 248, 255, 0.716);
+  position: absolute;
+}
