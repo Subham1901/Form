@@ -1,0 +1,34 @@
+.board-container {
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  margin: 0 auto;
+  background-color: #f3efef;
+  max-width: 900px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+.board-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-container > div:nth-child(odd) {
+  background-color: #ff9191;
+  font-size: 100px;
+}
+
+.board-container > div:nth-child(even) {
+  font-size: 100px;
+  background-color: #ffd6d6;
+}
+.result {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.result > button {
+  color: red;
+}
